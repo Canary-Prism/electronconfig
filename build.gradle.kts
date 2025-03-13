@@ -10,6 +10,12 @@ application {
     mainClass = "canaryprism.electronconfig.Main"
 }
 
+tasks.jar {
+    manifest {
+        attributes += "Main-Class" to "canaryprism.electronconfig.Main"
+    }
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
