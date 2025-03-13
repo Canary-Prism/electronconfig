@@ -56,14 +56,15 @@ class Main {
     public static void main(String[] args) {
         var sc = new Scanner(System.in);
         
-        do {
-            System.out.print("enter an atomic number: ");
+        System.out.print("enter an atomic number: ");
+        while (sc.hasNext()) {
             try {
                 var z = sc.nextInt();
                 System.out.println(electronConfiguration(z));
             } catch (NumberFormatException e) {
                 System.out.println("not an integer");
             }
-        } while (sc.hasNext());
+            System.out.print("enter an atomic number: ");
+        }
     }
 }
