@@ -62,6 +62,7 @@ class Main {
                 var z = sc.nextInt();
                 System.out.println(electronConfiguration(z));
             } catch (InputMismatchException e) {
+                sc.next();
                 System.out.println("not an integer");
             }
             System.out.print("enter an atomic number: ");
