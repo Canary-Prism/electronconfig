@@ -1,0 +1,2 @@
+module canaryprism.electronconfig {
+}
